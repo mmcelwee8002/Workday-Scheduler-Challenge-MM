@@ -21,6 +21,10 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+.todaysDate{
+  color: red;
+  font-size: 30px;
+}
 .description{
   white-space: pre-wrap;
 }
