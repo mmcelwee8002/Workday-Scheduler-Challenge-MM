@@ -33,17 +33,34 @@ textarea{
   text-align: center;
   border-radius: 15px;
 }
+
+#textAreaPast{
+  background-color:lightgrey;
+  border: groove;
+}
 #textArea{
-  background-color: palevioletred
+  background-color: palevioletred;
+  border: groove;
 }
 #textAreaFuture{
-  background-color:lightgreen
+  background-color:lightgreen;
+  border: groove;
 }
+
+.time{
+
+  background-color: lightgrey;
+width: 75px;
+padding: 20px;
+border: groove;
+}
+
 #save{
 
   background-color: lightskyblue;
 width: 40px;
 padding-right: 40px;
+border-style: groove;
 }
 
 .form-control{
@@ -99,3 +116,12 @@ font-weight: bold;
   width: 200px;
   height: 150px;
 }
+footer {display: flex;
+  justify-content: space-between;;
+  background-color: white;  
+  background-size: cover;
+  bottom: 0; 
+  width: 100%;
+  margin-top: 30px;
+  height: 150px;
+}      

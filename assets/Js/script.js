@@ -7,11 +7,43 @@ var currentDay = moment().format("dddd, MMMM Do, YYYY");
 document.getElementById('currentDay').innerHTML=currentDay
 
 //Need columns (12 or 24) to represent the time.  6 am for 24 hours
+var hourMinus3 = moment().subtract(3, 'hour').format('hA')
+document.getElementById('hourMinus3').innerHTML=hourMinus3
+
+var hourMinus2 = moment().subtract(2, 'hour').format('hA')
+document.getElementById('hourMinus2').innerHTML=hourMinus2
+
+var hourMinus1 = moment().subtract(1, 'hour').format('hA')
+document.getElementById('hourMinus1').innerHTML=hourMinus1
+
 var currentTime = moment().format("hA");
-document.getElementById('currentTime').innerHTML=currentTime
+document.getElementById('currentTime').innerHTML=currentTime;
 
 var hourPlus1 = moment().add(1, 'hour').format('hA')
-document.getElementById('hourPlus1').innerHTML=hourPlus1
+document.getElementById('hourPlus1').innerHTML=hourPlus1;
+
+var hourPlus2 = moment().add(2, 'hour').format('hA')
+document.getElementById('hourPlus2').innerHTML=hourPlus2;
+
+var hourPlus3 = moment().add(3, 'hour').format('hA')
+document.getElementById('hourPlus3').innerHTML=hourPlus3;
+
+var hourPlus4 = moment().add(4, 'hour').format('hA')
+document.getElementById('hourPlus4').innerHTML=hourPlus4;
+
+var hourPlus5 = moment().add(5, 'hour').format('hA')
+document.getElementById('hourPlus5').innerHTML=hourPlus5;
+
+var hourPlus6 = moment().add(6, 'hour').format('hA')
+document.getElementById('hourPlus6').innerHTML=hourPlus6;
+
+var hourPlus7 = moment().add(7, 'hour').format('hA')
+document.getElementById('hourPlus7').innerHTML=hourPlus7;
+
+var hourPlus8 = moment().add(8, 'hour').format('hA')
+document.getElementById('hourPlus8').innerHTML=hourPlus8;
+
+
 
 
 
