@@ -33,6 +33,24 @@ textarea{
   text-align: center;
   border-radius: 15px;
 }
+#textArea{
+  background-color: palevioletred
+}
+#textAreaFuture{
+  background-color:lightgreen
+}
+#save{
+
+  background-color: lightskyblue;
+width: 40px;
+padding-right: 40px;
+}
+
+.form-control{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: x-large;
+font-weight: bold;
+}
 
 .row {
   white-space: pre-wrap;
@@ -72,4 +90,12 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+#rcorners3 {
+  border-radius: 25px;
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
 }
