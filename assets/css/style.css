@@ -2,6 +2,8 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1;
+  flex-shrink: 1;
+
 }
 
 textarea{
@@ -35,15 +37,16 @@ textarea{
   border-radius: 15px;
 }
 
-#textAreaPast{
-  background-color:lightgrey;
+#textAreaPastMinus1, #textAreaPastMinus2, #textAreaPastMinus3{
+  background-color:lightgray;
   border: groove;
 }
-#textArea{
+#textAreaPresent{
   background-color: palevioletred;
   border: groove;
 }
-#textAreaFuture{
+#textAreaFuture1, #textAreaFuture2, #textAreaFuture3, #textAreaFuture4, #textAreaFuture5,
+#textAreaFuture6, #textAreaFuture7, #textAreaFuture8{
   background-color:lightgreen;
   border: groove;
 }
@@ -54,9 +57,12 @@ textarea{
 width: 75px;
 padding: 20px;
 border: groove;
+
 }
 
-#save{
+#savepresent, #saveplus1,#saveplus2,#saveplus3,#saveplus4,
+#saveplus5,#saveplus6,#saveplus7, #saveplus8,
+#saveminus3, #saveminus2, #saveminus1{
 
   background-color: lightskyblue;
 width: 40px;
@@ -103,7 +109,31 @@ font-weight: bold;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  flex: 1 1 1px ;
 }
+
+input {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  border-width: 1px;
+  color: #5f6368;
+  font-size: 1.1em;
+  
+  line-height: 20px;
+  margin: 0;
+  
+  max-width: 100%;
+  padding: 0px 8px 8px 8px;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease, ease;
+  vertical-align: middle;
+  width: 978px;
+  height: 75px;
+  flex: 1 1 1px ;
+}
+
 
 
 
@@ -121,3 +151,5 @@ footer a{
   font-size: xx-small;
   color: wheat;
 }   
+
+

@@ -51,29 +51,23 @@ document.getElementById('hourPlus8').innerHTML=hourPlus8;
 
 
 
-let textAreaPresent = document.getElementById('textArea');
-let textAreaPast = document.getElementById('textAreaPast');
-let textAreaFuture = document.getElementById('textAreaFuture');
-let saveButton = document.querySelector('#save')
+let textAreaPresent = document.querySelector('#textAreaPresent');
+let textAreaPast = document.querySelector('textAreaPast');
+let textAreaFuture = document.querySelector('textAreaFuture');
+let saveButtonPresent = document.getElementById('savepresent')
 
-saveButton.addEventListener("click", function(event) {
+
+
+saveButtonPresent.addEventListener("click", function(event) {
   event.preventDefault();
-console.log(this);
-  // let schedule = {
-  //     pastEvent: textAreaPast,
-  //     presentEvent: textAreaPresent.value,
-  //     futureEvent: textAreaFuture
-  // };
-  // localStorage.setItem('schedule', schedule.presentEvent);
-  
-  
-
-})
-  
+  console.log("the button was clicked")
 
 
-
-
-
-
+  let schedule = {
+      Presentday:  textAreaPresent.value.trim()
+  };
+   
+//this works!
+  localStorage.setItem('CalendarEvent', JSON.stringify(schedule));
+  });
 
