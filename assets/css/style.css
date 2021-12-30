@@ -115,4 +115,9 @@ footer {display: flex;
   width: 100%;
   margin-top: 30px;
   height: 150px;
-}      
+}   
+footer a{
+
+  font-size: xx-small;
+  color: wheat;
+}   

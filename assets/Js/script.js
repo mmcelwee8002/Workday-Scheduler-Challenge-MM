@@ -2,6 +2,8 @@
 //psudo code
 
 // in the header needs to be current date
+// right hand side will be a save button to save the event
+//left hand side need times.  This is going to be dynamic and will update every hour
 
 let currentDay = moment().format("dddd, MMMM Do, YYYY");
 document.getElementById('currentDay').innerHTML=currentDay
@@ -44,47 +46,34 @@ let hourPlus8 = moment().add(8, 'hour').format('hA')
 document.getElementById('hourPlus8').innerHTML=hourPlus8;
 
 
-//left hand side need times.  This is going to be dynamic and will update every hour
+// each box or area for event can be clicked in to changed/updated or deleted
 
 
 
 
-let textArea = document.getElementById('#textArea')
-let textAreaPast = document.getElementById('#textAreaPast')
-let textAreaFuture = document.getElementById('#textAreaFuture')
+let textAreaPresent = document.getElementById('textArea');
+let textAreaPast = document.getElementById('textAreaPast');
+let textAreaFuture = document.getElementById('textAreaFuture');
 let saveButton = document.querySelector('#save')
 
 saveButton.addEventListener("click", function(event) {
-event.preventDefault();
+  event.preventDefault();
+console.log(this);
+  // let schedule = {
+  //     pastEvent: textAreaPast,
+  //     presentEvent: textAreaPresent.value,
+  //     futureEvent: textAreaFuture
+  // };
+  // localStorage.setItem('schedule', schedule.presentEvent);
+  
+  
 
-let schedule = {
-    pastEvent: calendarInputPast.value.trim(),
-    presentEvent: calendarInputPresent.value.trim(),
-    futureEvent: calendarInputFuture.value.trim()
-};
-    localStorage.setItem('schedule' , JSON.stringify(schedule));
-console.log(schedule)
-  
-  
 })
-
-
-  
-  
-  
-
-
   
 
 
 
 
-//   localStorage.setItem("schedule", JSON.stringify(schedule));
 
-// });
-
-
-// right hand side will be a save button to save the event
-// each box or area for event can be clicked in to changed/updated or deleted
 
 
