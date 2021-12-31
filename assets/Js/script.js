@@ -42,9 +42,6 @@ document.getElementById('hourPlus6').innerHTML=hourPlus6;
 let hourPlus7 = moment().add(7, 'hour').format('hA')
 document.getElementById('hourPlus7').innerHTML=hourPlus7;
 
-let hourPlus8 = moment().add(8, 'hour').format('hA')
-document.getElementById('hourPlus8').innerHTML=hourPlus8;
-
 
 // each box or area for event can be clicked in to changed/updated or deleted
 
@@ -57,22 +54,11 @@ let textAreaFuture = document.querySelector('textAreaFuture');
 let saveButtonPresent = document.getElementById('savepresent')
 
 
-
-saveButtonPresent.addEventListener("click", function() {
+//This needs to be replicated for each column
+saveButtonPresent.addEventListener("click", function () {
   console.log("the button was clicked")
 
-
-  let schedule = {
-      presentTime:  textAreaPresent.value
-
-    
-  };
-  
-
-//this works!
-  localStorage.setItem('CalendarEvent', JSON.stringify(schedule));
-  
-  }); 
- 
-  textAreaPresent.value = localStorage.getItem('CalendarEvent')
- 
+  //this works!
+  localStorage.setItem('CalendarEvent', JSON.stringify(textAreaPresent.value));
+});
+textAreaPresent.value = JSON.parse(localStorage.getItem('CalendarEvent'));

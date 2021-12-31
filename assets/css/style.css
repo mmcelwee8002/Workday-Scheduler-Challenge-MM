@@ -70,11 +70,7 @@ padding-right: 40px;
 border-style: groove;
 }
 
-input{
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: x-large;
-font-weight: bold;
-}
+
 
 .row {
   white-space: pre-wrap;
@@ -113,6 +109,9 @@ font-weight: bold;
 }
 
 input {
+  font-size: x-large;
+  font-weight: bold;
+
   background-color: whitesmoke;
   border-radius: 3px;
   border-width: 1px;
@@ -152,4 +151,9 @@ footer a{
   color: wheat;
 }   
 
+@media screen and (max-width: 575px) {
 
+  input {
+    width: 100%;
+  }
+}
