@@ -58,16 +58,21 @@ let saveButtonPresent = document.getElementById('savepresent')
 
 
 
-saveButtonPresent.addEventListener("click", function(event) {
-  event.preventDefault();
+saveButtonPresent.addEventListener("click", function() {
   console.log("the button was clicked")
 
 
   let schedule = {
-      Presentday:  textAreaPresent.value.trim()
+      presentTime:  textAreaPresent.value
+
+    
   };
-   
+  
+
 //this works!
   localStorage.setItem('CalendarEvent', JSON.stringify(schedule));
-  });
-
+  
+  }); 
+ 
+  textAreaPresent.value = localStorage.getItem('CalendarEvent')
+ 

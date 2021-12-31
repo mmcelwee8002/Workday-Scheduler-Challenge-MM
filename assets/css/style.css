@@ -53,7 +53,7 @@ textarea{
 
 .time{
 
-  background-color: lightgrey;
+background-color: lightgrey;
 width: 75px;
 padding: 20px;
 border: groove;
@@ -64,13 +64,13 @@ border: groove;
 #saveplus5,#saveplus6,#saveplus7, #saveplus8,
 #saveminus3, #saveminus2, #saveminus1{
 
-  background-color: lightskyblue;
+background-color: lightskyblue;
 width: 40px;
 padding-right: 40px;
 border-style: groove;
 }
 
-.form-control{
+input{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: x-large;
 font-weight: bold;
