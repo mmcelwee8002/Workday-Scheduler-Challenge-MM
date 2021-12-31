@@ -51,14 +51,123 @@ document.getElementById('hourPlus7').innerHTML=hourPlus7;
 let textAreaPresent = document.querySelector('#textAreaPresent');
 let textAreaPast = document.querySelector('textAreaPast');
 let textAreaFuture = document.querySelector('textAreaFuture');
-let saveButtonPresent = document.getElementById('savepresent')
 
+
+let saveButtonMinus3 = document.getElementById('saveMinus3')
+let saveButtonMinus2 = document.getElementById('saveMinus2')
+let saveButtonMinus1 = document.getElementById('saveMinus1')
+let saveButtonPresent = document.getElementById('savepresent')
+let saveButtonPlus1 = document.getElementById('savePlus1')
+let saveButtonPlus2 = document.getElementById('savePlus2')
+let saveButtonPlus3 = document.getElementById('savePlus3')
+let saveButtonPlus4 = document.getElementById('savePlus4')
+let saveButtonPlus5 = document.getElementById('savePlus5')
+let saveButtonPlus6 = document.getElementById('savePlus6')
+let saveButtonPlus7 = document.getElementById('savePlus7')
+
+
+
+//Minus 3
+saveButtonMinus3.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  
+  localStorage.setItem('CalendarMinus3', JSON.stringify(textAreaMinus3.value));
+});
+textAreaMinus3.value = JSON.parse(localStorage.getItem('CalendarMinus3'));
+
+
+
+
+//Minus 2
+saveButtonMinus2.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  
+  localStorage.setItem('CalendarMinus2', JSON.stringify(textAreaMinus2.value));
+});
+textAreaMinus2.value = JSON.parse(localStorage.getItem('CalendarMinus2'));
+
+
+
+
+//Minus 1
+saveButtonMinus1.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  
+  localStorage.setItem('CalendarMinus1', JSON.stringify(textAreaMinus1.value));
+});
+textAreaMinus1.value = JSON.parse(localStorage.getItem('CalendarMinus1'));
 
 //This needs to be replicated for each column
 saveButtonPresent.addEventListener("click", function () {
   console.log("the button was clicked")
 
   //this works!
-  localStorage.setItem('CalendarEvent', JSON.stringify(textAreaPresent.value));
+  localStorage.setItem('CalendarPresent', JSON.stringify(textAreaPresent.value));
 });
-textAreaPresent.value = JSON.parse(localStorage.getItem('CalendarEvent'));
+textAreaPresent.value = JSON.parse(localStorage.getItem('CalendarPresent'));
+
+//plus 1
+saveButtonPlus1.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus1', JSON.stringify(textAreaFuture1.value));
+});
+textAreaFuture1.value = JSON.parse(localStorage.getItem('CalendarPlus1'));
+
+//plus 2
+saveButtonPlus2.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus2', JSON.stringify(textAreaFuture2.value));
+});
+textAreaFuture2.value = JSON.parse(localStorage.getItem('CalendarPlus2'));
+
+//plus 3
+saveButtonPlus3.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus3', JSON.stringify(textAreaFuture3.value));
+});
+textAreaFuture3.value = JSON.parse(localStorage.getItem('CalendarPlus3'));
+
+//plus 4
+saveButtonPlus4.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus4', JSON.stringify(textAreaFuture4.value));
+});
+textAreaFuture4.value = JSON.parse(localStorage.getItem('CalendarPlus4'));
+
+//plus 5
+saveButtonPlus5.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus5', JSON.stringify(textAreaFuture5.value));
+});
+textAreaFuture5.value = JSON.parse(localStorage.getItem('CalendarPlus5'));
+
+//plus 6
+saveButtonPlus6.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus6', JSON.stringify(textAreaFuture6.value));
+});
+textAreaFuture6.value = JSON.parse(localStorage.getItem('CalendarPlus6'));
+
+//plus 7
+saveButtonPlus7.addEventListener("click", function () {
+  console.log("the button was clicked")
+
+  //this works!
+  localStorage.setItem('CalendarPlus7', JSON.stringify(textAreaFuture7.value));
+});
+textAreaFuture7.value = JSON.parse(localStorage.getItem('CalendarPlus7'));

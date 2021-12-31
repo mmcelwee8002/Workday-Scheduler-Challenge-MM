@@ -37,7 +37,7 @@ textarea{
   border-radius: 15px;
 }
 
-#textAreaPastMinus1, #textAreaPastMinus2, #textAreaPastMinus3{
+#textAreaMinus1, #textAreaMinus2, #textAreaMinus3{
   background-color:lightgray;
   border: groove;
 }
@@ -60,9 +60,9 @@ border: groove;
 
 }
 
-#savepresent, #saveplus1,#saveplus2,#saveplus3,#saveplus4,
-#saveplus5,#saveplus6,#saveplus7, #saveplus8,
-#saveminus3, #saveminus2, #saveminus1{
+#savepresent, #savePlus1,#savePlus2,#savePlus3,#savePlus4,
+#savePlus5,#savePlus6,#savePlus7,
+#saveMinus3, #saveMinus2, #saveMinus1{
 
 background-color: lightskyblue;
 width: 40px;
